@@ -1,0 +1,1 @@
+<div align="center" style="border-top:dashed">&copy; 2007 Harvey West Auctioneers llc.<br>Designed for a screen resolution of 1280x1024, you are using <script>document.write(screen.width+'x'+screen.height)</script>.</div>
