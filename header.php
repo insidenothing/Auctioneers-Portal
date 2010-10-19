@@ -1,6 +1,9 @@
 <?
-include '../CORE/common/functions.php';
-db_connect('hwa1.hwestauctions.com','intranet','','');
+include '/gitbox/Auction-Office/common/functions.php';
+
+mysql_connect();
+mysql_select_db('intranet');
+
 include 'security.php';
 onlineAuctioneer($user[auctioneer_id]);
 ?>
