@@ -29,13 +29,13 @@ if ($_POST[submit]){
 			$headers  = "MIME-Version: 1.0 \n";
 			$headers .= "Content-type: text/html; charset=iso-8859-1 \n";
 			$headers .= "From: Harvey West Auctioneer Portal <no-reply@hwestauctions.com> \n";
-			$headers .= "Bcc: Zach <zach@hwestauctions.com> \n";
+			//$headers .= "Bcc: Zach <zach@hwestauctions.com> \n";
 			mail($email,$subject,$body,$headers);
 		$status = "Your New Password Was Sent To $_POST[email]";
 	}else{
 		portal_log("$email not found...", 0);
 
-		$status = "$_POST[email] Not Found, Contact Zach@HWestAuctions.com For Help";
+		$status = "$_POST[email] Not Found, Contact Patrick For Help";
 	}
 
 }
