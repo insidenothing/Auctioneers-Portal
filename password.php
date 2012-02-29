@@ -30,7 +30,16 @@ if ($_POST[submit]){
 			$headers .= "Content-type: text/html; charset=iso-8859-1 \n";
 			$headers .= "From: Patrick McGuire <patrick@mdwestserve.com> \n";
 			//$headers .= "Bcc: Zach <zach@hwestauctions.com> \n";
-			mail($email,$subject,$body,$headers);
+			
+			
+			
+			if (mail($email,$subject,$body,$headers)) {
+				echo("<p>Message successfully sent!</p>");
+			} else {
+				echo("<p>Message delivery failed...</p>");
+			}
+			
+			
 		$status = "Your New Password Was Sent To $_POST[email]";
 	}else{
 		portal_log("$email not found...", 0);
