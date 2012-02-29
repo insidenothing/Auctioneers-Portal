@@ -1,5 +1,5 @@
 <?
-include '/gitbox/Auction-Office/common/functions.php';
+include 'functions.php';
 
 mysql_connect();
 mysql_select_db('intranet');
