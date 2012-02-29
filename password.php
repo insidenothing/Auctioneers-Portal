@@ -28,7 +28,7 @@ if ($_POST[submit]){
 			$subject = "New Harvey West Auctioneer Portal Password";
 			$headers  = "MIME-Version: 1.0 \n";
 			$headers .= "Content-type: text/html; charset=iso-8859-1 \n";
-			$headers .= "From: Harvey West Auctioneer Portal <no-reply@hwestauctions.com> \n";
+			$headers .= "From: Patrick McGuire <patrick@mdwestserve.com> \n";
 			//$headers .= "Bcc: Zach <zach@hwestauctions.com> \n";
 			mail($email,$subject,$body,$headers);
 		$status = "Your New Password Was Sent To $_POST[email]";
